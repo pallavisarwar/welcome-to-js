@@ -1,6 +1,6 @@
 'use strict';
 
-let text = null;
+/*let text = null;
 while (text === null) {
   text = prompt('enter some text, each character will be doubled:');
 }
@@ -16,3 +16,19 @@ alert(doubled);
   - Add an hyphen after each character.
   - Add an hyphen only between the characters.
 */
+let text = null;
+while (text === null){
+  text = prompt ('enter some text')
+}
+
+let hyphenAfter = '';
+for (let char of text) {
+  hyphenAfter += char + '-';
+}
+alert(hyphenAfter);
+
+let hyphenBetween = '';
+for (let char of text){
+  hyphenBetween += char + '-';
+}
+ alert(hyphenBetween);
