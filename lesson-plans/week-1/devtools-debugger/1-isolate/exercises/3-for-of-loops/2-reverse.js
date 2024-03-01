@@ -17,3 +17,11 @@ alert(transformation);
 /*  ===== Challenges =====
   - Put the characters back in the right order after the string was reversed.
 */
+let backToNormal = '';
+
+for (let char of backwards) {
+  backToNormal = char + backToNormal;
+}
+
+let original = backwards + ' -> ' + backToNormal;
+alert(original);
